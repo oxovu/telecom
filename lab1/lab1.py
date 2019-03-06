@@ -20,6 +20,7 @@ def plot_graphic(x, y, title, x_label="x", y_label="y", show=True, save=False):
         plt.show()
     if save:
         plt.savefig('graphics/' + title + '.png')
+        plt.close()
 
 
 if __name__ == '__main__':
@@ -38,8 +39,6 @@ if __name__ == '__main__':
         fft_freq = np.fft.fftfreq(n, ts)  # Return the Discrete Fourier Transform sample frequencies.
 
         plot_graphic(x=t[:pts_num], y=sig[:pts_num], title=title + '_signal', x_label='time(S)',
-                     y_label='amplitude (V)',
-                     show=True)
+                     y_label='amplitude (V)')
         plot_graphic(x=fft_freq[:fs], y=abs(sig_fft)[:fs], title=title + '_spectrum', x_label='frequency (Hz)',
-                     y_label='amplitude (V)',
-                     show=True)
+                     y_label='amplitude (V)')
