@@ -14,8 +14,11 @@
 
 \section{Программа работы}
 Сгенерировать однотональный сигнал низкой частоты.
-Выполнить фазовую модуляцию/демодуляцию сигнала по закону u(t) = (Um cos(Ωt + ks(t)), используя встроенную функ- цию MatLab pmmod, pmdemod
+
+Выполнить фазовую модуляцию/демодуляцию сигнала по закону u(t) = (Um cos(Ωt + ks(t))
+
 Получить спектр модулированного сигнала.
+
 Выполнить частотную модуляцию/демодуляциюи.\\
 
 
@@ -37,30 +40,44 @@
 
 \lstinputlisting[
 	label=code:lab12
-	caption={lab2.py},% для печати символ '_' требует выходной символ '\'
-]{lab2.py}
+	caption={lab5.py},% для печати символ '_' требует выходной символ '\'
+]{lab5.py}
 \parindent=1cm % командна \lstinputlisting сбивает параментры отступа
 
-\subsection{Вывод программы}
+\subsection{Графики}
 
-\begin{lstlisting}
-correlation method  fft
-[0 0 0 1 0 2 0 2 1 2 1 1 0 0 1 0 1 0]
-time =  0.003647021992946975
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{1}
+		\caption{фазовая модуляция и демодуляция} 
+		\label{pic:triangle_spectrum} % название для ссылок внутри кода
+	\end{center}
+\end{figure}
 
-correlation method  direct
-[0 0 0 1 0 2 0 2 1 2 1 1 0 0 1 0 1 0]
-time =  2.1521991584450006e-05
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{2}
+		\caption{спектр промодулированного сигнала} 
+		\label{pic:triangle_spectrum} % название для ссылок внутри кода
+	\end{center}
+\end{figure}
 
-correlation method  auto
-[0 0 0 1 0 2 0 2 1 2 1 1 0 0 1 0 1 0]
-time =  0.00011062600242439657
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{3}
+		\caption{частотная модуляция и демодуляция} 
+		\label{pic:triangle_spectrum} % название для ссылок внутри кода
+	\end{center}
+\end{figure}
 
-sync_mess = sig[6 : 14] =  [1 0 1]
-package start =  6
-package =  [0 1 1 1 0 0 0 0]
-\end{lstlisting}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{4}
+		\caption{спектр промодулированного сигнала} 
+		\label{pic:triangle_spectrum} % название для ссылок внутри кода
+	\end{center}
+\end{figure}
 
 \section{Выводы}
-В данной работе с помощью корреляции была найдена синхропосылка в сигнале. 
+В данной работе были рассмотрены фазовая и частотная модуляция и демодуляция, а также их спектры. 
 \end{document}
