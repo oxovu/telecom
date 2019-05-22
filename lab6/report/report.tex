@@ -35,16 +35,6 @@
 	\item ASK/PSK.
 \end{itemize}
 
-Упомяну, что существует традиция в русской терминологии радиосвязи использовать для модуляции цифровым сигналом термин «манипуляция».
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=0.4\linewidth]{pics/modulations}
-		\caption{Виды манипуляций}
-		\label{fig:modulations}
-	\end{center}
-\end{figure}
-
 В случае амплитудного шифтинга амплитуда сигнала для логического нуля может быть (например) в два раза меньше логической единицы.
 
 Частотная модуляция похожим образом представляет логическую единицу интервалом с большей частотой, чем ноль.
@@ -89,7 +79,6 @@ GNU Radio — программный инструментарий, предос�
 
 \newpage
 \section{Результаты работы}
-Были получены сигнальные созвездия и спектральные изображения для разных видов модуляции.
 
 \begin{figure}[!htb]
 	\minipage{0.32\textwidth}
@@ -121,6 +110,46 @@ GNU Radio — программный инструментарий, предос�
 	\begin{center}
 		\includegraphics[width=\linewidth]{pics/GMSK}
 		\caption{GMSK}
+		\label{fig:GMSK}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!htb]
+	\minipage{1\textwidth}
+	\includegraphics[width=\linewidth]{pics/BPSK_SIG}
+	\caption{BPSK signal}\label{fig:BPSK}
+	\endminipage\hfill
+\end{figure}
+\begin{figure}[!htb]
+	\minipage{1\textwidth}
+	\includegraphics[width=\linewidth]{pics/QPSK_SIG}
+	\caption{QPSK signal}\label{fig:QPSK}
+	\endminipage\hfill
+\end{figure}
+\begin{figure}[!htb]
+	\minipage{1\textwidth}%
+	\includegraphics[width=\linewidth]{pics/8-PSK_SIG}
+	\caption{8-PSK signal}\label{fig:8-PSK}
+	\endminipage
+\end{figure}
+
+\begin{figure}[!htb]
+	\minipage{1\textwidth}
+	\includegraphics[width=\linewidth]{pics/QAM-4_SIG}
+	\caption{QAM-4 signal}\label{fig:QAM-4}
+	\endminipage\hfill
+\end{figure}
+\begin{figure}[!htb]
+	\minipage{1\textwidth}
+	\includegraphics[width=\linewidth]{pics/QAM-16_SIG}
+	\caption{QAM-16 signal}\label{fig:QAM-16}
+	\endminipage\hfill
+\end{figure}
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[width=\linewidth]{pics/GMSK-SIG}
+		\caption{GMSK signal}
 		\label{fig:GMSK}
 	\end{center}
 \end{figure}
